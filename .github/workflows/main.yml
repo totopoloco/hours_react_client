@@ -32,7 +32,7 @@ jobs:
         run: npm run build
 
       - name: Zip build directory
-        run: npx bestzip ./hours-client-html.zip ./build/*
+        run: npm run zip
 
       - name: Upload build zip
         uses: actions/upload-artifact@v2
