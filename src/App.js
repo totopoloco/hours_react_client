@@ -44,7 +44,7 @@ function App() {
         return () => {
             document.removeEventListener('keydown', handleKeyDown);
         };
-    }, [start, lunchStart, lunchDuration]);
+    }, [start, lunchStart, lunchDuration, handleSubmit]);
 
     const workDay = data?.workDay;
 
